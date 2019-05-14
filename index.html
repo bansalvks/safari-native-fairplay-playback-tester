@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+    <title>videojs-contrib-hls embed</title>
+
+</head>
+
+<body>
+    <h1>Fairplay Playback</h1>
+    <video-js id="my_video_1" class="vjs-default-skin" controls preload="auto" width="640" height="268"></video-js>
+    <video id='video' width="320" height="240" controls></video>
+
+    <!-- include the script of cp that you want to run -->
+    <script src="utils.js"></script>
+    <script src="fairplay.js"></script>
+    <script src="fairplayfetch.js"></script>
+    <script src="app.js"></script>
+
+    <br />
+
+    <label>Manifest URL</label>
+    <input id="manifestUrl" />
+    <br />
+
+    <label>Ceftificate URL</label>
+    <input id="certificateUrl" />
+    <br />
+
+    <label>License URL</label>
+    <input id="licenseUrl" />
+
+    <br />
+
+    <button onclick="attemptPlayback()">Play</button>
+
+</body>
+
+</html>
